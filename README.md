@@ -2,37 +2,24 @@
 
 ## 脚手架文件结构
 
-├── node_modules
-
-├── public
-
-│  ├── favicon.ico: 页签图标
-
-│  └── index.html: 主页面
-
-├── src
-
-│  ├── assets: 存放静态资源
-
-│  │  └── logo.png
-
-│  │── component: 存放组件
-
-│  │  └── HelloWorld.vue
-
-│  │── App.vue: 汇总所有组件
-
-│  │── main.js: 入口文件
-
-├── .gitignore: git版本管制忽略的配置
-
-├── babel.config.js: babel的配置文件
-
-├── package.json: 应用包配置文件
-
-├── README.md: 应用描述文件
-
-├── package-lock.json：包版本控制文件
+```
+ ├── node_modules
+ ├── public
+ │  ├── favicon.ico: 页签图标
+ │  └── index.html: 主页面
+ ├── src
+ │  ├── assets: 存放静态资源
+ │  │  └── logo.png
+ │  │── component: 存放组件
+ │  │  └── HelloWorld.vue
+ │  │── App.vue: 汇总所有组件
+ │  │── main.js: 入口文件
+ ├── .gitignore: git版本管制忽略的配置
+ ├── babel.config.js: babel的配置文件
+ ├── package.json: 应用包配置文件
+ ├── README.md: 应用描述文件
+ ├── package-lock.json：包版本控制文件
+```
 
 ## 关于不同版本的Vue
 
@@ -101,7 +88,7 @@
 
     第一步定义混合：
 
-    ```
+    ```js
     {
         data(){....},
         methods:{....}
@@ -112,7 +99,7 @@
     第二步使用混入：
 
     ​ 全局混入：```Vue.mixin(xxx)```
-    ​ 局部混入：```mixins:['xxx'] ```
+    ​ 局部混入：```mixins:['xxx']```
 
 ## 插件
 
@@ -289,7 +276,7 @@
    4. 提供数据：```pubsub.publish('xxx',数据)```
 
    5. 最好在beforeDestroy钩子中，用```PubSub.unsubscribe(pid)```去<span style="color:red">取消订阅。</span>
- 
+
 ## nextTick
 
 1. 语法：```this.$nextTick(回调函数)```
