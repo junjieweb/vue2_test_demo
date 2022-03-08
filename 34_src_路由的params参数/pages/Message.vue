@@ -9,7 +9,7 @@
         <router-link
           :to="{
             name: 'detail',
-            query: {
+            params: {
               id: message.id,
               title: message.title,
             },
