@@ -20,9 +20,7 @@
           >
         </li>
       </ul>
-      <keep-alive :include="['News', 'Message']">
-        <router-view></router-view>
-      </keep-alive>
+      <router-view></router-view>
     </div>
   </div>
 </template>

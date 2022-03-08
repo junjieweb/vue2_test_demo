@@ -17,8 +17,6 @@
         >
           {{ message.title }}
         </router-link>
-        <button @click="pushShow(message)">push查看</button>
-        <button @click="replaceShow(message)">replace查看</button>
       </li>
     </ul>
     <hr />
@@ -37,26 +35,6 @@ export default {
         { id: "003", title: "消息003" },
       ],
     };
-  },
-  methods: {
-    pushShow(message) {
-      this.$router.push({
-        name: "detail",
-        query: {
-          id: message.id,
-          title: message.title,
-        },
-      });
-    },
-    replaceShow(message) {
-      this.$router.replace({
-        name: "detail",
-        query: {
-          id: message.id,
-          title: message.title,
-        },
-      });
-    },
   },
 };
 </script>
